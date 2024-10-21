@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProConnect HDMI Cable</title>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: rgba(241, 208, 231, 0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            animation: colorChange 3s infinite alternate;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            background-color: rgba(241, 208, 231, 1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .content-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .content-section img {
+            max-width: 45%;
+            border-radius: 10px;
+            animation: zoomIn 3s ease-in-out infinite alternate;
+        }
+
+        .text-content {
+            width: 50%;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .text-content h2 {
+            color: white;
+            animation: blinkText 1s infinite alternate;
+        }
+
+        .text-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            animation: bounceIn 1.5s ease-in-out infinite alternate;
+        }
+
+        .conclusion {
+            background-color: rgba(241, 208, 231, 1);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+            animation: colorPulse 3s infinite;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(241, 208, 231, 1);
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Blink Icons */
+        .fa-blink {
+            animation: blinkIcon 1.5s infinite;
+        }
+
+        /* Animations */
+        @keyframes colorChange {
+            from { color: white; }
+            to { color: #ff66ff; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes blinkText {
+            50% { color: #ff66ff; }
+        }
+
+        @keyframes bounceIn {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        @keyframes colorPulse {
+            0% { background-color: rgba(241, 208, 231, 1); }
+            50% { background-color: #ffd1dc; }
+            100% { background-color: rgba(241, 208, 231, 1); }
+        }
+
+        @keyframes blinkIcon {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1><i class="fas fa-projector fa-blink"></i> ProConnect HDMI Cable</h1>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- First Section -->
+        <div class="content-section">
+            <div class="text-content">
+                <h2>ProConnect HDMI Cable for Projectors <i class="fas fa-tv fa-blink"></i></h2>
+                <p><i class="fas fa-plug fa-blink"></i> Connect your projector to any device easily</p>
+                <p><i class="fas fa-video fa-blink"></i> Supports clear pictures up to 4K quality</p>
+                <p><i class="fas fa-shield-alt fa-blink"></i> Strong design for long use</p>
+            </div>
+            <img src="image1.png" alt="ProConnect HDMI Cable Image 1">
+        </div>
+
+        <!-- Second Section -->
+        <div class="content-section">
+            <div class="text-content">
+                <h2>Why Use ProConnect HDMI Cable <i class="fas fa-check-circle fa-blink"></i></h2>
+                <p><i class="fas fa-plug fa-blink"></i> Just plug in and it works</p>
+                <p><i class="fas fa-tv fa-blink"></i> Works with projectors, TVs, gaming consoles, and more</p>
+                <p><i class="fas fa-signal fa-blink"></i> Good signal for smooth sound and video</p>
+                <p><i class="fas fa-arrows-alt fa-blink"></i> Comes in different lengths for any room</p>
+            </div>
+            <img src="image2.png" alt="ProConnect HDMI Cable Image 2">
+        </div>
+
+        <!-- Conclusion Section -->
+        <div class="conclusion">
+            <p>The ProConnect HDMI Cable is reliable and easy to use.</p>
+            <p>Choose this cable for high-quality connections every time.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 ProConnect HDMI Cable. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
